@@ -1,9 +1,9 @@
-import React from 'react';
+//import React from 'react';
 import Laptop from '../assets/laptop.jpg';
-import { Outlet } from 'react-router';
+// import Navbar from "../components/Navbar"
+// import Footer from "../components/Footer"
 
-
-const Analytics = () => {
+const Contact = () => {
   return (
     <div className='w-full bg-white py-16 px-4'>
     <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
@@ -18,10 +18,11 @@ const Analytics = () => {
           eveniet ex deserunt fuga?
         </p>
         <button className='bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3'>Get Started</button>
-        <Outlet />
       </div>
     </div>
+    {/* <Navbar/>
+    <Footer/> */}
   </div>
 );
 };
-export default Analytics;
+export default Contact;

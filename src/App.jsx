@@ -1,23 +1,14 @@
-import React from "react"
-import Analytics from './components/Analytics';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Newsletter from './components/Newsletter';
-import Cards from './components/Cards';
-import Footer from './components/Footer';
+import { RouterProvider } from "react-router-dom";
+import router from "./Routes/Routes";
+
+
+
+
+
 
 function App() {
 
-  return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Analytics />
-      <Newsletter />
-      <Cards />
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router}></RouterProvider>
 }
 
 export default App;
