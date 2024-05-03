@@ -1,27 +1,61 @@
 //import React from 'react';
-import Laptop from '../assets/laptop.jpg';
+//import Laptop from '../assets/laptop.jpg';
 // import Navbar from "../components/Navbar"
 // import Footer from "../components/Footer"
 
 const Contact = () => {
   return (
     <div className='w-full bg-white py-16 px-4'>
-    <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
-      <img className='w-[500px] mx-auto my-4' src={Laptop} alt='/' />
-      <div className='flex flex-col justify-center'>
-        <p className='text-[#00df9a] font-bold '>DATA ANALYTICS DASHBOARD</p>
-        <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>Manage Data Analytics Centrally</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          molestiae delectus culpa hic assumenda, voluptate reprehenderit
-          dolore autem cum ullam sed odit perspiciatis. Doloribus quos velit,
-          eveniet ex deserunt fuga?
-        </p>
-        <button className='bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3'>Get Started</button>
+<div class="bg-white px-6 py-12 sm:py-24 lg:px-8">
+  <div class="mx-auto max-w-xl flex flex-col items-center justify-center text-center">
+    <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">Let's Talk</h1>
+    <p class="mt-3 text-lg text-gray-600">Feature request? Suggestion? or maybe you'd like to be our critic! Here's a form just for that.</p>
+  </div>
+  <form class="mx-auto mt-16 max-w-xl sm:mt-20">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+      <div>
+        <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
+        <div class="mt-2.5">
+          <input required="" type="text" name="first-name" id="first-name" autocomplete="given-name" placeholder="Your First Name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"/>
+        </div>
+      </div>
+      <div>
+        <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
+        <div class="mt-2.5">
+          <input required="" type="text" name="last-name" id="last-name" autocomplete="family-name" placeholder="Your Last Name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"/>
+        </div>
+      </div>
+      <div class="sm:col-span-2">
+        <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
+        <div class="mt-2.5">
+          <input required="" type="text" name="company" id="company" autocomplete="organization" placeholder="Your Company Name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"/>
+        </div>
+      </div>
+      <div class="sm:col-span-2">
+        <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+        <div class="mt-2.5">
+          <input required="" type="email" name="email" id="email" autocomplete="email" placeholder="Your Email Address" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"/>
+        </div>
+      </div>
+      <div class="sm:col-span-2">
+        <label for="phone" class="block text-sm font-semibold leading-6 text-gray-900">Phone number</label>
+        <div class="mt-2.5">
+          <input required="" type="tel" name="phone" id="phone" autocomplete="tel" placeholder="Your Phone Number" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"/>
+        </div>
+      </div>
+      <div class="sm:col-span-2">
+        <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+        <div class="mt-2.5">
+          <textarea name="message" id="message" rows="4" placeholder="Share your thoughts..." class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"></textarea>
+        </div>
       </div>
     </div>
-    {/* <Navbar/>
-    <Footer/> */}
+    <div class="mt-10">
+      <button type="submit" class="bg-blue-600 text-white rounded-sm py-2 w-full block">Submit →</button>
+    </div>
+  </form>
+</div>
+
   </div>
 );
 };
