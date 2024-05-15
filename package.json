@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "serve-json": "json-server --watch db.json",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "vite build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "ssr": "npm run build && node server/index.js" 
