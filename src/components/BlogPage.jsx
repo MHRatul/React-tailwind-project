@@ -42,11 +42,13 @@ const BlogPage = () => {
 
         {/* blogCards Section */}
         <div>
-            <BlogCard blog={blog} currentPage={currentPage} selectedCategory={selectedCategory} pageSize={pageSize}/>
+            <BlogCard blog={blog} currentPage={currentPage} selectedCategory={selectedCategory} pageSize={PageSize}/>
         </div>
 
         {/* Pagination Section */}
-        <div>Pagination</div>
+        <div>
+            
+        </div>
     </div>
   )
 }
